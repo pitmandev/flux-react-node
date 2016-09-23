@@ -5,7 +5,7 @@ var ProductComponent = React.createClass({
 
         /* -- Just jQuery -- */
         buyButtonJquery: function(product) {
-          var button = $('<button class="buy-button">$' + product.price
+          var button = $('<button class="buy-button">$' + this.props.product.price
             + '</button>');
           
           // handle click event
