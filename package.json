@@ -4,7 +4,8 @@
   "description": "Ejemplo funcional de Flux, react sobre Node js\r El original está en https://egghead.io/lessons/react-flux-overview-and-dispatchers aunque he tenido que tocar algún fichero, porque el ejemplo está basado en una versón anterior de React.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "gulp"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "object-assign": "^4.1.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
+  },
+  "dependencies": {
+    "httpdispatcher": "^1.0.0"
   }
 }
