@@ -5,9 +5,18 @@ El original está en https://egghead.io/lessons/react-flux-overview-and-dispatch
 El ejemplo es una prueba de concepto que permite comprobar la reutilización de componentes desarrollados por nosotros.
 Para ejecutar el proyecto:
 
-gulp
-cd dist 
-httpster
+Para la instalación de las depencias: ,
+npm install gulp browserify reactify vinyl-source-stream react react-dom react-router-component httpster httpdispatcher
 
-Previamente,
-npm install gulp browserify reactify vinyl-source-stream react react-dom react-router-component httpster
+Para la ejecución, se puedes usar dos implmentaciones de servidor diferentes, aunque de momento esto obliga a tener duplcado el 'index.html'
+
+1.- usando httpster, en el puerto 3333
+	gulp (o npm install) 
+	cd dist 
+	httpster
+
+2.- usado httpdispatcher, en el puerto 8080
+	gulp (o npm install)
+	node server.js
+
+
