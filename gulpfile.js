@@ -9,10 +9,17 @@ gulp.task('browserify', function(){
 	.bundle()
 	.pipe(source('main.js'))
 	.pipe(gulp.dest('dist/js'));
-});
+
+	browserify('./src/js/mainFlux.js')
+	.transform('reactify')
+	.bundle()
+	.pipe(source('mainFlux.js'))
+	.pipe(gulp.dest('dist/js'));	
+	}
+);
 
 gulp.task('copy', function(){
-	gulp.src('src/index.html')
+	gulp.src('src/*.html')
 	.pipe(gulp.dest('dist'));
 	gulp.src('src/assets/**/*.*')
 	.pipe(gulp.dest('dist/assets'));

@@ -1,8 +1,12 @@
+/************************************************************/
+/******* EJEMPLO BASICO REACT CON jQuery 				*****/
+/************************************************************/
+var React = require('react');
+var ReactDOM = require('react-dom');
+
 var App = require('./components/app');
 var ListaCompra = require('./components/listaCompra');
 var Deslizador = require('./components/deslizador');
-var ReactDOM = require('react-dom');
-var React = require('react');
 
 ReactDOM.render(<App />,document.getElementById('main'));
 
